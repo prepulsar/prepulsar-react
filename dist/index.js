@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.state = void 0;
-const react_1 = require("react");
 const prepulsar_1 = require("prepulsar");
+const react_1 = require("react");
 const state = (initialValue, options = {}) => {
     const reactiveState = (0, prepulsar_1.reactive)(initialValue, options);
     return () => {

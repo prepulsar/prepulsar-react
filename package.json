@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "jest",
     "lint": "eslint . --ext .ts,.tsx",
@@ -13,7 +14,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "react": "^16.8.0"
+    "prepulsar": "file:../prepulsar"
   },
   "devDependencies": {
     "@types/react": "^18.2.22",
@@ -21,5 +22,8 @@
     "jest": "^29.7.0",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
   }
 }

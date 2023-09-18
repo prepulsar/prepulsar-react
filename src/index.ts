@@ -1,6 +1,6 @@
 
-import { useState, useEffect } from "react";
 import { reactive, ReactiveOptions } from "prepulsar";
+import { useEffect, useState } from "react";
 
 export const state = <T>(
   initialValue: T, 
@@ -12,7 +12,7 @@ export const state = <T>(
     const [, setter] = useState<T>(initialValue);
     const { proxy, unsubscribe } = reactiveState((newValue) => setter(() => newValue));
 
-    useEffect(() => unsubscribe);
+    useEffect(() => unsubscribe, []);
 
     return proxy;
   }
