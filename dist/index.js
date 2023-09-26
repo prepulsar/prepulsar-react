@@ -8,7 +8,7 @@ const state = (initialValue, options = {}) => {
     return () => {
         const [, setter] = (0, react_1.useState)(initialValue);
         const { proxy, unsubscribe } = reactiveState((newValue) => setter(() => newValue));
-        (0, react_1.useEffect)(() => unsubscribe);
+        (0, react_1.useEffect)(() => unsubscribe, []);
         return proxy;
     };
 };
