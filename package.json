@@ -14,7 +14,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "prepulsar": "^1.0.1"
+    "prepulsar": "^1.0.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.22",
