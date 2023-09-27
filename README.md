@@ -45,27 +45,23 @@ The `state` function is a utility for managing reactive state in a React compone
 
 ## Return Value
 
-The `state` function returns a function that should be called within a React component. This inner function returns a proxy object that represents the reactive state. Additionally, it sets up the necessary hooks for integrating this state into your component.
+The `state` function returns a custom hook. The hook returns a proxy object which has a `value` property holding the state's value.
 
 ## Example Usage
 
-Here's an example of how to use the `state` function within a React component:
-
 ```jsx
 import React from "react";
-import { state } from "./state"; // Import the state function
+import { state } from "prepulsar-react";
 
-function MyComponent() {
-  // Create a reactive state with an initial value of 0
-  const reactiveState = state(0);
+const useCounter = state(0);
 
-  // Access the reactive state like a regular variable
-  const currentValue = reactiveState();
+const Counter = () => {
+  const counter = useCounter();
 
   return (
     <div>
       <p>Current Value: {currentValue}</p>
-      <button onClick={() => reactiveState(currentValue + 1)}>Increment</button>
+      <button onClick={() => counter.value += 1}>Increment</button>
     </div>
   );
 }
