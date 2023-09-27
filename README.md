@@ -65,5 +65,3 @@ const Counter = () => {
     </div>
   );
 }
-
-export default MyComponent;
