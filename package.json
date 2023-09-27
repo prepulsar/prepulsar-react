@@ -1,6 +1,6 @@
 {
   "name": "prepulsar-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/index.js",
   "types": "./dist/index.d.ts",
@@ -14,7 +14,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "prepulsar": "^1.0.2"
+    "prepulsar": "1.0.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.22",
