@@ -1,6 +1,6 @@
 {
   "name": "prepulsar-react",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Reactive state management librbary for React built on top of Prepulsar.",
   "main": "dist/index.js",
   "types": "./dist/index.d.ts",
