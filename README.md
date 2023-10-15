@@ -60,7 +60,7 @@ const Counter = () => {
 
   return (
     <div>
-      <p>Current Value: {currentValue}</p>
+      <p>Current Value: {counter.value}</p>
       <button onClick={() => counter.value += 1}>Increment</button>
     </div>
   );
